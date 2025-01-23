@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+:root {
+    --text-white: #fff;
+
+    --blue-light: #a8d1e7;
+    /* Azul claro pastel */
+    --blue-medium: #7ab8d9;
+    /* Azul médio pastel */
+    --blue-dark: #4a90a4;
+    /* Azul escuro suave */
+
+    --gray-light: #d9d9d9;
+    /* Cinza claro pastel */
+    --gray-medium: #b0b0b0;
+    /* Cinza médio */
+    --gray-dark: #7f7f7f;
+    /* Cinza escuro suave */
+
+    --accent-blue: #b4e0ef;
+    /* Azul acentuado, tom pastel */
+    --muted-blue: #89c1d4;
+    /* Azul sutil, menos vibrante */
+    --background-gray: #f3f4f6;
+    /* Cinza de fundo muito claro */
+    --text-gray: #5f6a72;
+    /* Cinza de texto legível */
+}
+
+.divPrincipal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--blue-dark);
+}
+
+.container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerTitle {
+    font-size: 30px;
+    color: var(--text-white);
+    font-weight: bold;
+    text-align: center;
+}
+
+.task {
+    background-color: var(--blue-medium);
+    color: var(--text-white);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+}
+
+.task:hover {
+    transform: scale(102%);
+}
+
+.taskComplete {
+    text-decoration: line-through;
+}
+
+.buttonTask {
+    background-color: var(--blue-medium);
+    color: var(--text-white);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonTask:hover {
+    transform: scale(105%);
+}
+
+.containerTasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    border-radius: 10px;
+    border: var(--gray-medium) 1px solid;
+    background-color: var(--gray-light);
+}
+
+.containerTask {
+    display: flex;
+    gap: 10px;
+}
+
+.containerAddTasks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 24px;
+    border-radius: 10px;
+    border: var(--gray-medium) 1px solid;
+    background-color: var(--gray-light);
+
+    & input {
+        border: none;
+        border-radius: 10px;
+        padding: 12px;
+        font-size: 17px;
+        color: var(--text-gray);
+    }
+
+    & input:focus {
+        outline: 1px solid var(--blue-dark);
+    }
+
+    & button {
+        background-color: var(--blue-medium);
+        color: var(--text-white);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 17px;
+        border: none;
+    }
+}
+
+.containerDatailsTask{
+    background-color: var(--gray-light);
+    color: var(--text-gray);
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+
+    & h2{
+        font-size: 23px;
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+
+    & button {
+        background-color: var(--blue-medium);
+        color: var(--text-white);
+        padding: 10px;
+        padding-right: 15px;
+        border-radius: 10px;
+        font-size: 17px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+        margin-inline: auto;
+    }
+}
