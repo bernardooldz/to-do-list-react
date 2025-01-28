@@ -43,6 +43,10 @@ body {
     background-color: var(--blue-dark);
 }
 
+html{
+    overflow-x: hidden;
+}
+
 html ::-webkit-scrollbar {
     width: 3px;
 }
