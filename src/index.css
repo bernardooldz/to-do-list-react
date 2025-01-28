@@ -67,7 +67,7 @@ html ::-webkit-scrollbar-track {
     display: flex;
     justify-content: center;
     padding: 20px;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .container {
@@ -152,6 +152,7 @@ html ::-webkit-scrollbar-track {
     border-radius: 10px;
     border: var(--gray-medium) 1px solid;
     background-color: var(--gray-light);
+    margin-bottom: 40px;
 }
 
 .containerTask {
