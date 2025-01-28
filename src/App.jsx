@@ -3,6 +3,7 @@ import Tasks from "./components/Tasks";
 import "./App.css"
 import { useEffect, useState } from "react";
 import { v4 } from "uuid";
+import Title from "./components/Title";
 
 function App() {
   const [tasks, setTasks] = useState(
@@ -42,7 +43,7 @@ function App() {
   return (
     <div className="divPrincipal">
       <div className="container">
-        <h1 className="containerTitle">Gerenciador de tarefas</h1>
+        <Title sectionName={"Gerenciador de Tarefas"} nameClass={"titleGeral"}/>
         <AddTask onAddTaskSubmit={onAddTaskSubmit}/>
         <Tasks tasks={tasks} onTaskClick={onTaskClick} onDeleteClick={onDeleteClick}/>
       </div>

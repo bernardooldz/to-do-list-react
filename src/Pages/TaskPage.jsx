@@ -1,5 +1,6 @@
 import { ChevronsLeft } from "lucide-react";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import Title from "../components/Title";
 
 function TaskPage() {
     const [SearchParams] = useSearchParams()
@@ -14,8 +15,7 @@ function TaskPage() {
     return (
         <div className="divPrincipal">
             <div className="container">
-                <h1 className="containerTitle">Detalhes da Tarefa</h1>
-                
+            <Title sectionName={"Detalhes da Tarefa"} nameClass={"titleGeral"}/>
                 <div className="containerDatailsTask">
                     <h2>{title}</h2>
                     <p>{description}</p>

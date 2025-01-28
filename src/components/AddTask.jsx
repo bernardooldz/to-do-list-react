@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Title from "./Title";
 
 function AddTask({ onAddTaskSubmit }) {
     const [title, setTitle] = useState("");
@@ -6,6 +7,7 @@ function AddTask({ onAddTaskSubmit }) {
 
     return (
         <div className="containerAddTasks">
+            <Title sectionName={"Adicione uma tarefa"} nameClass={"subTitles"} />
             <input
                 type="text"
                 placeholder="Digite o título da tarefa."

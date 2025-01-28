@@ -12,6 +12,10 @@ li {
     list-style: none;
 }
 
+body {
+    background-color: var(--blue-dark);
+}
+
 :root {
     --text-white: #fff;
 
@@ -45,21 +49,44 @@ li {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: var(--blue-dark);
+    padding-top: 50px;
 }
 
 .container {
     width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
-.containerTitle {
-    font-size: 30px;
-    color: var(--text-white);
-    font-weight: bold;
-    text-align: center;
+.titleGeral {
+    & h1 {
+        font-size: 35px;
+        color: var(--text-white);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    & hr {
+        display: none;
+    }
+}
+
+.subTitles {
+    & h1 {
+        font-size: 25px;
+        color: var(--blue-dark);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    & hr {
+        background-color: #4a90a4;
+        height: 4px;
+        width: 360px;
+        margin-block: 5px 10px;
+        margin-inline: auto;
+    }
 }
 
 .task {
@@ -145,7 +172,7 @@ li {
     }
 }
 
-.containerDatailsTask{
+.containerDatailsTask {
     background-color: var(--gray-light);
     color: var(--text-gray);
     padding: 20px;
@@ -155,7 +182,7 @@ li {
     width: 100%;
     text-align: left;
 
-    & h2{
+    & h2 {
         font-size: 23px;
         padding-bottom: 10px;
         font-weight: bold;
